@@ -1,0 +1,43 @@
+.button-close {
+    float: right;
+    border: none;
+    background-color: transparent;
+    margin-top: 8px;
+    margin-right: 18px;
+}
+.container-body {
+    margin-top: 16vh;
+    min-height: 50vh;
+}
+.drawer-sidenav {    
+    width: 88vw;
+}
+.icon-close {
+    font-size: 38px;
+    color: #5B17AA;
+    font-weight: bold;
+}
+.lista-menu {
+    margin-top: 16%;
+    margin-left: 8%;
+    font-weight: bold;
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            padding: 12px 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container-body {
+        margin-top: 10vh !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-body {
+        margin-top: 12vh;
+    }
+}

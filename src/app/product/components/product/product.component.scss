@@ -1,0 +1,53 @@
+.button-cart {
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 0.9em !important;
+    margin-bottom: 12px !important;
+    img {
+        width: 14px;
+        height: 14px;
+        filter: invert(1);
+    }
+}
+
+.cart-product{
+    padding: 0;
+}
+.content-cart {
+    background-color: #F4F4F4;
+    font-size: 1.2em;
+    padding: 16px 22px 5px 22px;
+}
+.image{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.percentage-discount {
+    width: 40px;
+    padding-left: 9px;
+    background-color: #5B17AA;
+    color: white;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.price {
+    display: flex;
+}
+.price-with-discount {
+    color: #5B17AA;
+}
+.price-without-discount {
+    color: #6B6B6B;
+    text-decoration: line-through;    
+    margin-left: auto;
+}

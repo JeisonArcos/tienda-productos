@@ -1,0 +1,18 @@
+<div *ngIf="product" class="container-product-order">
+    <mat-card class="mat-cart-product-order">
+        <button mat-icon-button class="button-delete" (click)="deleteProduct()">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <div class="image-order">
+            <img [src]="product.thumbnail" alt="Photo of a Shiba Inu">
+        </div>
+        <mat-card-content>
+            <p>
+                {{product.title | slice:0:30}}
+            </p>
+            <p>
+                {{product.price | currency: '$': 'symbol' : '1.0-0'}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

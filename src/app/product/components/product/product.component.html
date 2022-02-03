@@ -1,0 +1,33 @@
+<div *ngIf="product">
+    <mat-card class="cart-product">
+        <div class="image">
+            <img [src]="product.thumbnail" [alt]="product.title">
+        </div>
+        <mat-card-content class="content-cart">
+            <p class="percentage-discount">-50%</p>
+            <p>
+                {{product.title | slice:0:25}}
+            </p>
+            <div class="price">
+                <p class="price-with-discount">
+                    {{product.price | currency: '$': 'symbol' : '1.0-0'}}
+                </p>
+                <p class="price-without-discount">
+                    {{product.priceDiscount | currency: '$': 'symbol' : '1.0-0'}}
+                </p>
+            </div>
+            <button mat-button class="button-cart" (click)="addCart()">
+                <img src="assets/imagenes/icon-cart.png">
+                Agregar al carrito
+            </button>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<!-- id: string;
+title: string;
+thumbnail: string;
+color: string;
+percentageDiscount: string;
+price: number;
+priceDiscount: number; -->

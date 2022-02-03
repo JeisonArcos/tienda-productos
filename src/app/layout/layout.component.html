@@ -1,0 +1,24 @@
+<mat-drawer-container>
+    <mat-drawer class="drawer-sidenav" #drawer mode="over">
+        <button class="button-close" (click)="drawer.toggle()">
+            <mat-icon class="icon-close">close</mat-icon>
+        </button>
+    <div class="row lista-menu">
+        <ul>
+            <li>Hombre</li>
+            <li>Mujer</li>
+            <li>Junior</li>
+            <li>Niños</li>
+            <li>Accesorios</li>
+            <li>Ofertas</li>
+        </ul>
+    </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-header [drawer]="drawer"></app-header>
+        <div class="container-body">
+            <router-outlet></router-outlet>
+        </div>
+        <app-footer></app-footer>
+    </mat-drawer-content>
+</mat-drawer-container>

@@ -1,0 +1,59 @@
+<footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row container-footer">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3 class="title-policies">POLÍTICAS <button (click)="changeStatePolicies()"
+                    class="plus-symbol">{{showPolicies ? '-' : '+'}}</button>
+            </h3>
+            <ul class="ul-policies" [ngClass]="showPolicies  ? 'display-initial':''">
+                <li>Política de privacidad</li>
+                <li>Política de cambio</li>
+                <li>Política de envio</li>
+                <li>Términos y condiciones</li>
+                <li>Responsabilidad social</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3 class="title-about-us">SOBRE NOSOTROS <button (click)="changeStateAboutUs()"
+                    class="plus-symbol">{{showAboutUs ? '-' : '+'}}</button></h3>
+            <ul class="ul-about-us" [ngClass]="showAboutUs ? 'display-initial':''">
+                <li>Encuentra tu tienda</li>
+                <li>Contáctanos</li>
+                <li>Trabaja con nosotros</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="col-xs-12 container-payments-methods">
+            <h3 class="title-payments-method">MEDIOS DE PAGO <button (click)="changeStatePaymentsMethods()"
+                    class="plus-symbol">{{showPaymentMethods ? '-' : '+'}}</button></h3>
+            <ul class="ul-payments-method" [ngClass]="showPaymentMethods ? 'display-initial':''">
+                <li>PSE</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <h3 class="title-social-media">SÍGUENOS EN:</h3>
+            <ul class="list-social-media">
+                <li>
+
+                    <img class="icon-facebook" src="assets/imagenes/facebook.svg">
+                </li>
+                <li>
+
+                    <img src="assets/imagenes/twitter.svg">
+                </li>
+                <li>
+
+                    <img src="assets/imagenes/instagram.svg">
+                </li>
+                <li>
+
+                    <img src="assets/imagenes/youtube.svg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-text-copyright row center-xs center-sm center-md center-lg">
+        <p class="text-footer-copyright">&#169; Copyright Colombia. Todos los derechos reservados</p>
+    </div>
+</footer>
