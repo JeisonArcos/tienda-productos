@@ -1,0 +1,162 @@
+ul > li {
+    list-style: none;
+    font-size: 1.1em;
+}
+ul {
+    padding: 0;
+}
+
+.button-login {
+    background-color: white;
+    border: solid 0.5px;
+    height: 30px;
+}
+
+.button-search{
+    width: 40px;
+    padding: 3px 0;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    border: none;
+    background: #DEDEDE;
+}
+
+.button-search { 
+    img {
+        width: 17px;
+        height: 17px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+}
+
+.container-header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.container-options-header {
+    position: absolute;
+    right: 54px;
+    top: 24px;
+}
+
+.container-user{
+    height: 20px;
+    width: 20px; 
+    padding: 0 20px;   
+}
+
+.container-header {
+    width: 100%;
+    padding-right: 18px;
+}
+
+.container-cart {
+    img {
+        height: 22px;
+        width: 22px;
+        padding: 0 0 0 20px;
+    }
+}
+
+.field-search{
+    padding: 10px 0;
+    width: calc(100% - 40px);
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.form-search{
+    width: 40vw;
+    position: relative;
+}
+
+.icon-menu {
+    display: none;
+    font-size: 36px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.image-clothesstore{
+    width: 200px;
+    min-width: 130px;
+}
+
+.mat-menu{
+    background-color: black;
+}
+
+.mat-menu-header {
+    background-color: white;
+    padding: 40px;
+}
+
+.menu {
+    display: flex;
+}
+.menu li {
+    color: white;
+    border-right: 1px solid gray;
+    list-style: none;
+    padding: 0 15px 0 15px;
+}
+
+.menu li:last-child {
+    border-right:none;
+}
+@media (max-width: 768px) {
+    .button-login {
+        display: none;
+    }
+    .container-cart {
+        position: absolute;
+        top: 12px;
+        right: 7.5vw;
+    }
+    .container-options-header{
+        position: initial;
+    }
+    .container-user {
+        display: none;
+    }
+    .form-search {
+        width: 88vw;
+        input {
+            width: 100%;
+        }
+    }
+    .icon-menu {
+        display: block;
+        position: absolute;
+        left: 18px;
+        top: 6px;
+        mat-icon {
+            font-size: 36px;
+        }
+    }
+    .image-clothesstore {
+        width: 58%;
+        margin-top: 2%;
+        margin-left: 17%;
+    }
+    .mat-menu{
+        display: none;
+    }
+
+    .contenedor-usuario {
+        display: none;
+    }
+    .boton-iniciar-sesion{
+        display: none;
+    }
+
+    .mat-menu-header{
+        position: relative;
+    }
+    
+}

@@ -1,0 +1,24 @@
+.container-product-order {
+    padding: 20px;
+}
+.image-order{
+    height: 100px;
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.mat-cart-product-order {
+    position: relative;
+    .button-delete{
+        position: absolute;
+        top: -10px;
+        right: -4px;
+    }
+}

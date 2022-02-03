@@ -1,0 +1,14 @@
+<div class="row center-xs center-sm center-md center-lg">
+    <h1 class="title-most-wanted-products">PRODUCTOS MÁS BUSCADOS</h1>
+</div>
+<div>
+    <div class="swiper-products swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let product of products">
+                <app-product [product]="product"></app-product>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
