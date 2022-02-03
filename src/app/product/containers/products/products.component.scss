@@ -9,3 +9,9 @@
 .mat-progress-product{
     margin-top: 1vh;
 }
+
+@media (max-width: 576px) {
+    .container-product {
+        margin-top: 5vh;
+    }
+}
