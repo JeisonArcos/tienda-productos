@@ -13,9 +13,9 @@ export class BannerComponent implements OnInit {
   swiper?: Swiper;
 
   imagenes: string[] = [
-    "assets/imagenes/banner.png",
-    "assets/imagenes/banner.png",
-    "assets/imagenes/banner.png",
+    "assets/imagenes/banner.jpeg",
+    "assets/imagenes/banner.jpeg",
+    "assets/imagenes/banner.jpeg",
   ];
 
   constructor() { }
